@@ -14,7 +14,7 @@ function Navbar() {
   }, []);
   if (!mounted) return null;
   return (
-    <header className="text-white-100 sticky top-0 z-50 bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700 body-font">
+    <header className="text-white-100 sticky top-0 z-50 bg-[#0066A7] body-font">
       <div className="container mx-auto flex flex-wrap  p-3 flex-col md:flex-row items-center">
         <Link
           href={"/"}

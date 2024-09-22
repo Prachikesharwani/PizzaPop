@@ -85,12 +85,12 @@ function Login() {
           <div className="flex items-center justify-between"></div>
           <button
             type="submit"
-            className="border text-gray-900 dark:text-gray-100 font-bold dark:border-gray-400 border-gray-900 rounded mr-2 p-2 hover:bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700  hover:text-gray-100"
+            className="border font-bold text-[#0066A7] dark:text-gray-100 dark:border-gray-400 border-[#0066A7] rounded p-2 mr-2  dark:bg-[#0066A7]"
           >
             Log in
           </button>
           <Link href={"/signup"} style={{ all: "unset" }}>
-            <button className="border text-gray-900 dark:text-gray-100 font-bold dark:border-gray-400 border-gray-900 rounded mr-2 p-2 hover:bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700  hover:text-gray-100">
+            <button className="border font-bold text-[#0066A7] dark:text-gray-100 dark:border-gray-400 border-[#0066A7] rounded p-2 mr-2  dark:bg-[#0066A7]">
               New User?
             </button>
           </Link>

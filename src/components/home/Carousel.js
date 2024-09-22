@@ -18,7 +18,7 @@ function CarouselComponent() {
         return (
           <div
             key={index}
-            style={{ maxHeight: "36rem" }}
+            style={{ maxHeight: "36rem"}}
             className="object-center brightness-70"
           >
             <img

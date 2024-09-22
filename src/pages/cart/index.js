@@ -142,8 +142,8 @@ function Cart() {
           </div>
         </div>
       )}
-      <div style={{ minHeight: "95vh" }} className="flex items-center ">
-        <div class="container mx-auto flex border-gradient p-3 pb-10 m-10  rounded-lg flex-col">
+      <div style={{ minHeight: "95vh" }} className="flex items-center overflow-x-hidden dark:bg-black bg-[#F2F2F2] ">
+        <div class="container mx-auto flex dark:bg-[#111827] p-3 pb-10 m-10  rounded-lg flex-col w-[95vw] bg-white dark:text-white text-black">
           <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
               <div class="overflow-hidden">
@@ -343,7 +343,7 @@ function Cart() {
                     </div>
                     <button
                       onClick={handleCheckOut}
-                      className="border dark:border-gray-400 border-gray-900 rounded p-2 bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700  hover:text-gray-100 "
+                      className="border dark:border-gray-400 border-[#0066A7] dark:text-gray-100 rounded p-2 dark:bg-[#0066A7] text-[#0066A7]"
                     >
                       Check Out
                     </button>
