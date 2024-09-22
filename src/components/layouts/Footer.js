@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="text-white-100 bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700 body-font">
+    <footer className="text-white-100 bg-[#0066A7] body-font">
       <div className=" container mx-auto text-white flex flex-wrap p-3 flex-col md:flex-row items-center">
         <Link
           href={"/"}

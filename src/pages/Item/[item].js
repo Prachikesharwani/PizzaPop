@@ -6,9 +6,9 @@ import React from "react";
 function Item({ data }) {
   console.log(data);
   return (
-    <div className="min-h-screen px-10">
+    <div className="min-h-screen px-10 dark:bg-black bg-[#F2F2F2] py-5">
       <Link href={"/"}>
-        <div className="container max-w-md  flex my-6 cursor-pointer hover:scale-125  justify-center items-center mx-auto ">
+        <div className="container max-w-md  flex mb-6 cursor-pointer hover:scale-125  justify-center items-center mx-auto dark:text-white text-[#0066A7]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -37,7 +37,7 @@ function Item({ data }) {
           />
         </div>
 
-        <div className="font-extrabold mb-2 text-base md:text-2xl uppercase ">
+        <div className="font-extrabold mb-2 text-base md:text-2xl uppercase dark:text-white text-black">
           {data.name}
         </div>
         <div className=" max-w-sm text-base md:text-lg text-gray-700 dark:text-gray-400">

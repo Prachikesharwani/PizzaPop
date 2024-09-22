@@ -55,7 +55,7 @@ function Card(props) {
             <Image src={data.img} layout="fill" objectFit="cover" alt="pizza" />
           </div>
           <div className="p-4">
-            <div lassName="font-bold mb-2 text-xl uppercase"> {data.name}</div>
+            <div className="font-bold mb-2 text-xl uppercase text-black dark:text-white "> {data.name}</div>
             <p className=" short_description text-gray-700 dark:text-gray-400 text-base">
               {data.description}
             </p>
@@ -90,11 +90,11 @@ function Card(props) {
         <div className="flex p-4 font-bold  justify-between">
           <button
             onClick={handleAddToCart}
-            className="border dark:border-gray-400 border-gray-900 rounded p-2 hover:bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700  hover:text-gray-100 "
+            className="border dark:border-gray-400 text-[#0066A7] dark:text-gray-300 border-[#0066A7] rounded p-2 dark:bg-[#0066A7] "
           >
             Add to cart
           </button>
-          <p className="p-2 text-xl">₹{finalPrice}/-</p>
+          <p className="p-2 text-xl text-black dark:text-gray-300">₹{finalPrice}/-</p>
         </div>
       </div>
     </div>

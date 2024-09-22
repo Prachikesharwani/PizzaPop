@@ -24,7 +24,7 @@ function Orders() {
   return (
     <>
       {ordersData?.length > 0 ? (
-        <div className="container my-4 mx-auto">
+        <div className="container my-4 mx-auto ">
           {ordersData?.map((orders) => {
             return (
               <>
@@ -32,13 +32,13 @@ function Orders() {
                   return (
                     <>
                       {data.order_date ? (
-                        <div className="font-bold text-xl mb-2">
+                        <div className="font-bold text-xl mb-2 mx-4">
                           {" "}
                           {data.order_date} <hr />{" "}
                         </div>
                       ) : (
-                        <div className="my-4 w-96 border-black border-gradient p-4 dark:border-white rounded-lg">
-                          <div className="relative w-full rounded-lg h-72">
+                        <div className="my-4 mx-4 w-96 p-4 dark:border-white rounded-lg dark:text-white text-black dark:bg-[#111827] bg-[#F2F2F2]">
+                          <div className="relative w-full rounded-lg h-80">
                             <Image
                               src={data.img}
                               layout="fill"
@@ -63,7 +63,7 @@ function Orders() {
           })}
         </div>
       ) : (
-        <div className="flex w-screen flex-col items-center justify-center h-screen">
+        <div className="flex w-screen flex-col items-center justify-center h-screen overflow-x-hidden">
           <h1 className="text-4xl font-bold"> No previous Orders 😅</h1>
           <Link
             href="/"

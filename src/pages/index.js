@@ -29,10 +29,10 @@ export default function Home({data}) {
       <title>PizzaPop</title>
     </Head>
       <CarouselComponent />
-      <div className="container mx-auto">
-        <div className="my-6 space-x-5 mx-5">
+      <div className="container mx-auto dark:bg-black bg-[#F2F2F2]">
+        <div className="mb-6 space-x-5 mx-5">
           <button
-            className={`border-black rounded-full dark:border-white border-2 py-1 px-3 ${
+            className={` rounded-full dark:border-white border-[#0066A7] dark:text-white text-black mt-6 border-2 py-1 px-3 ${
               !typeFilter && "bg-slate-300 dark:bg-slate-600"
             } `}
             onClick={() => setTypeFilter(false)}
@@ -40,7 +40,7 @@ export default function Home({data}) {
             All
           </button>
           <button
-            className={`border-black rounded-full dark:border-white border-2 py-1 px-3 ${
+            className={` rounded-full dark:border-white border-[#0066A7] dark:text-white text-black mt-6 border-2 py-1 px-3 ${
               typeFilter === "Veg" && "bg-slate-300 dark:bg-slate-600"
             } `}
             onClick={() => {
@@ -57,7 +57,7 @@ export default function Home({data}) {
             Veg
           </button>
           <button
-            className={`border-black rounded-full dark:border-white border-2 py-1 px-3 ${
+            className={` rounded-full dark:border-white border-[#0066A7] dark:text-white text-black mt-6 border-2 py-1 px-3 ${
               typeFilter === "Non-Veg" && "bg-slate-300 dark:bg-slate-600"
             } `}
             onClick={() => {
@@ -79,11 +79,11 @@ export default function Home({data}) {
             <div className="mx-5" key={index}>
               <div
                 key={category}
-                className=" text-4xl mt-10 mb-3 uppercase font-bold"
+                className=" text-4xl mt-10 mb-3 uppercase font-bold dark:text-white text-[#0066A7]"
               >
                 {category}
               </div>
-              <hr />
+              <hr className="dark:border-white border-[#0066A7]"/>
               <div className="flex flex-col items-center justify-center">
                 <div className=" grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                   {foodData
